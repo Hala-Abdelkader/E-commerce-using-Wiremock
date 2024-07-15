@@ -1,0 +1,13 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/payment"
+  },
+  "response": {
+    "status": 200,
+    "bodyFileName": "get-payment.json",
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

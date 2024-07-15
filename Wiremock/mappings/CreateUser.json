@@ -1,0 +1,26 @@
+{
+    "request": {
+        "method": "POST",
+        "urlPath": "/users/create",
+        "headers": {
+            "Content-Type": {
+                "equalTo": "application/json"
+            }
+        },
+        "bodyPatterns": [
+            {
+                "matchesJsonPath": "$.username",
+                "equalTo": "Hala_Tamer"
+            },
+            {
+                "matchesJsonPath": "$.password",
+                "equalTo": "789123"
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+            "bodyFileName": "CreateUserRes.json"
+
+    }
+}

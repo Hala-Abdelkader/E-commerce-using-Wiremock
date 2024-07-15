@@ -1,0 +1,22 @@
+{
+    "request": {
+        "method": "PUT",
+        "url": "/users/update",
+        "headers": {
+            "Content-Type": {
+                "equalTo": "application/json"
+            }
+        },
+        "bodyPatterns": [
+            {
+                "matchesJsonPath": "$.username",
+                "equalTo": "Hala_Abdelkader"
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+		"bodyFileName": "UpdateUserInfoRes.json"
+
+    }
+}

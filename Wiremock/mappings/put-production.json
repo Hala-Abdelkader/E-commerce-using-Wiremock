@@ -1,0 +1,19 @@
+{
+    "request": {
+      "method": "PUT",
+      "url": "/product",
+      "bodyPatterns": [
+        {
+          "matchesJsonPath": "$[?(@.productId)]"
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "bodyFileName": "put-product.json",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+  

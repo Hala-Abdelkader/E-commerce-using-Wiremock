@@ -1,0 +1,19 @@
+{
+    "request": {
+      "method": "PUT",
+      "url": "/order",
+      "bodyPatterns": [
+        {
+          "matchesJsonPath": "$[?(@.orderId)]"
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "bodyFileName": "put-order.json",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+  

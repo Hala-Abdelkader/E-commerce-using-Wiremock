@@ -1,0 +1,22 @@
+{
+    "request": {
+      "method": "POST",
+      "url": "/order",
+      "bodyPatterns": [
+        {
+          "matchesJsonPath": "$[?(@.userId)]"
+        },
+        {
+          "matchesJsonPath": "$[?(@.productId)]"
+        }
+      ]
+    },
+    "response": {
+      "status": 201,
+      "bodyFileName": "order.json",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+  

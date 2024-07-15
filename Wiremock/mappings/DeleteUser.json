@@ -1,0 +1,10 @@
+{
+    "request": {
+        "method": "DELETE",
+        "urlPath": "/USERS/delete"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "DeleteUserRes.json"
+    }
+}

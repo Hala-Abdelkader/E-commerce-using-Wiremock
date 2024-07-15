@@ -1,0 +1,22 @@
+{
+    "request": {
+      "method": "POST",
+      "url": "/product",
+      "bodyPatterns": [
+        {
+          "matchesJsonPath": "$[?(@.productName)]"
+        },
+        {
+          "matchesJsonPath": "$[?(@.price)]"
+        }
+      ]
+    },
+    "response": {
+      "status": 201,
+      "bodyFileName": "post-product.json",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+  

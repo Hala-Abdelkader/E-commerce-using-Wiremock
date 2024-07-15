@@ -1,0 +1,22 @@
+{
+    "request": {
+      "method": "POST",
+      "url": "/payment",
+      "bodyPatterns": [
+        {
+          "matchesJsonPath": "$[?(@.orderId)]"
+        },
+        {
+          "matchesJsonPath": "$[?(@.amount)]"
+        }
+      ]
+    },
+    "response": {
+      "status": 200,
+      "bodyFileName": "payment.json",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
+  

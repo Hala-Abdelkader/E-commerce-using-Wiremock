@@ -1,0 +1,7 @@
+{
+  "paymentId": 5001,
+  "orderId": 1001,
+  "amount": 699.99,
+  "paymentStatus": "completed",
+  "transactionDate": "2024-07-15T00:05:00Z"
+}

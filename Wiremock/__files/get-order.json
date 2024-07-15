@@ -1,0 +1,7 @@
+{
+  "orderId": 1001,
+  "userId": 1,
+  "productId": 101,
+  "orderStatus": "confirmed",
+  "orderDate": "2024-07-15T00:00:00Z"
+}
